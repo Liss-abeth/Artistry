@@ -90,9 +90,9 @@ const UshopPage = () => {
         _id: item._id,
         name: item.pname || item.name,
         price: item.price,
-        image: item.productImage
-          ? `http://localhost:1011${item.productImage.startsWith("/") ? item.productImage : "/uploads/" + item.productImage}`
-          : `http://localhost:1011/${item.image.replace(/\\/g, "/")}`,
+       image: item.productImage
+  ? `https://artistry-backend-ss49.onrender.com${item.productImage.startsWith("/") ? item.productImage : "/uploads/" + item.productImage}`
+  : `https://artistry-backend-ss49.onrender.com/${item.image.replace(/\\/g, "/")}`,
         quantity: 1
       });
     }
@@ -187,12 +187,13 @@ const UshopPage = () => {
           {filteredProducts.map((prod) => (
             <Grid item xs={6} sm={6} md={3} lg={2} key={prod._id}>
               <Card sx={{ backgroundColor: "#ffffff", border: "2px solid black", borderRadius: 2 }}>
-                <CardMedia
-                  component="img"
-                  height="150"
-                  image={`http://localhost:1011${prod.productImage.startsWith("/") ? prod.productImage : "/uploads/" + prod.productImage}`}
-                  alt={prod.pname}
-                />
+               <CardMedia
+  component="img"
+  height="150"
+  image={`https://artistry-backend-ss49.onrender.com${prod.productImage.startsWith("/") ? prod.productImage : "/uploads/" + prod.productImage}`}
+  alt={prod.pname}
+/>
+
                 <CardContent>
                   <Typography variant="h6" color="black">
                     {prod.pname}
@@ -230,12 +231,13 @@ const UshopPage = () => {
           {filteredMaterials.map((mat) => (
             <Grid item xs={6} sm={6} md={3} lg={2} key={mat._id}>
               <Card sx={{ backgroundColor: "#ffffff", border: "2px solid black", borderRadius: 2 }}>
-                <CardMedia
-                  component="img"
-                  height="150"
-                  image={`http://localhost:1011/${mat.image.replace(/\\/g, "/")}`}
-                  alt={mat.name}
-                />
+               <CardMedia
+  component="img"
+  height="150"
+  image={`https://artistry-backend-ss49.onrender.com/${mat.image.replace(/\\/g, "/")}`}
+  alt={mat.name}
+/>
+
                 <CardContent>
                   <Typography variant="h6" color="black">
                     {mat.name}

@@ -76,22 +76,23 @@ const ArtistPage = () => {
                   }}
                 >
                   <CardMedia
-                    component="img"
-                    height="140"
-                    image={`http://localhost:1011/${artist.profilePicture.replace(
-                      /\\/g,
-                      "/"
-                    )}`}
-                    alt={artist.artistName}
-                    sx={{
-                      width: 140,
-                      height: 140,
-                      borderRadius: "50%",
-                      objectFit: "cover",
-                      mt: 2,
-                      mx: "auto",
-                    }}
-                  />
+  component="img"
+  height="140"
+  image={`https://artistry-backend-ss49.onrender.com/${artist.profilePicture.replace(
+    /\\/g,
+    "/"
+  )}`}
+  alt={artist.artistName}
+  sx={{
+    width: 140,
+    height: 140,
+    borderRadius: "50%",
+    objectFit: "cover",
+    mt: 2,
+    mx: "auto",
+  }}
+/>
+
                   <CardContent>
                     <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
                       {artist.username}

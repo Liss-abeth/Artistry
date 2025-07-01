@@ -141,33 +141,34 @@ const CartPage = () => {
                   }}
                 >
                   <img
-                    src={
-                      item.productId?.productImage
-                        ? `http://localhost:1011${
-                            item.productId.productImage.startsWith("/")
-                              ? item.productId.productImage
-                              : "/uploads/" + item.productId.productImage
-                          }`
-                        : item.materialId?.image
-                        ? `http://localhost:1011/${item.materialId.image.replace(
-                            /\\/g,
-                            "/"
-                          )}`
-                        : "https://via.placeholder.com/80"
-                    }
-                    alt={
-                      item.productId?.pname ||
-                      item.materialId?.name ||
-                      "Unknown Item"
-                    }
-                    style={{
-                      width: "80px",
-                      height: "80px",
-                      objectFit: "cover",
-                      marginRight: "10px",
-                      borderRadius: "5px",
-                    }}
-                  />
+  src={
+    item.productId?.productImage
+      ? `https://artistry-backend-ss49.onrender.com${
+          item.productId.productImage.startsWith("/")
+            ? item.productId.productImage
+            : "/uploads/" + item.productId.productImage
+        }`
+      : item.materialId?.image
+      ? `https://artistry-backend-ss49.onrender.com/${item.materialId.image.replace(
+          /\\/g,
+          "/"
+        )}`
+      : "https://via.placeholder.com/80"
+  }
+  alt={
+    item.productId?.pname ||
+    item.materialId?.name ||
+    "Unknown Item"
+  }
+  style={{
+    width: "80px",
+    height: "80px",
+    objectFit: "cover",
+    marginRight: "10px",
+    borderRadius: "5px",
+  }}
+/>
+
 
                   <div style={{ flexGrow: 1 }}>
                     <Typography>

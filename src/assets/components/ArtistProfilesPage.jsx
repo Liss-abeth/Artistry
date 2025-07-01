@@ -101,20 +101,21 @@ const ArtistProfilesPage = () => {
                     p: 2,
                   }}
                 >
-                  <CardMedia
-                    component="img"
-                    height="120"
-                    image={`http://localhost:1011/${artist.profilePicture.replace(/\\/g, "/")}`}
-                    alt={artist.artistName}
-                    sx={{
-                      width: 120,
-                      height: 120,
-                      borderRadius: "50%",
-                      objectFit: "cover",
-                      mx: "auto",
-                      mb: 2,
-                    }}
-                  />
+                 <CardMedia
+  component="img"
+  height="120"
+  image={`https://artistry-backend-ss49.onrender.com/${artist.profilePicture.replace(/\\/g, "/")}`}
+  alt={artist.artistName}
+  sx={{
+    width: 120,
+    height: 120,
+    borderRadius: "50%",
+    objectFit: "cover",
+    mx: "auto",
+    mb: 2,
+  }}
+/>
+
                   <CardContent>
                     <Typography variant="h6" gutterBottom sx={{ color: "#5D455F" }}>
                       {artist.username}

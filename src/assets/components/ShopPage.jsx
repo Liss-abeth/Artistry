@@ -189,12 +189,20 @@ const ShopPage = () => {
           {filteredProducts.map((product) => (
             <Grid item xs={6} sm={6} md={3} lg={2} key={product._id}>
                        <Card sx={{ backgroundColor: "white", color: "black", border: "2px solid black" }}>
-                <CardMedia
-                  component="img"
-                  height="150"
-                  image={`http://localhost:1011${product.productImage.startsWith('/') ? product.productImage : '/uploads/' + product.productImage}`}
-                  alt={product.pname}
-                />
+             <CardMedia
+  component="img"
+  height="150"
+  image={`${window.location.hostname === "localhost"
+    ? "http://localhost:1011"
+    : "https://artistry-backend-ss49.onrender.com"}${
+      product.productImage.startsWith("/")
+        ? product.productImage
+        : "/uploads/" + product.productImage
+    }`}
+  alt={product.pname}
+/>
+
+
                 <CardContent>
                   <Typography variant="h6" sx={{ color: "#05081C" }}>{product.pname}</Typography>
                   <Typography variant="body2" sx={{ color: "black" }}>{product.category}</Typography>
@@ -242,12 +250,13 @@ const ShopPage = () => {
           {filteredMaterials.map((material) => (
      <Grid item xs={6} sm={6} md={3} lg={2} key={material._id}>
                 <Card sx={{ backgroundColor: " white", color: "black", border: "2px solid black" }}>
-                <CardMedia
-                  component="img"
-                  height="150"
-                  image={`http://localhost:1011/${material.image.replace(/\\/g, "/")}`}
-                  alt={material.name}
-                />
+               <CardMedia
+  component="img"
+  height="150"
+  image={`https://artistry-backend-ss49.onrender.com/${material.image.replace(/\\/g, "/")}`}
+  alt={material.name}
+/>
+
                 <CardContent>
                   <Typography variant="h6" sx={{ color: "#05081C" }}>{material.name}</Typography>
                   <Typography variant="body2" sx={{ color: "black" }}>{material.manufacturer}</Typography>
