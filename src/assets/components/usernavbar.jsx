@@ -87,7 +87,7 @@ const UserNavbar = () => {
         
         <Typography variant="h6" sx={{ flexGrow: 1, overflow: "hidden" }}>
   <Link
-    to="/"
+    to="/user"
     style={{
       textDecoration: "none",
       color: "white",

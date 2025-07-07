@@ -127,7 +127,7 @@ const UserHome = () => {
         <Typography
           variant={isSmallScreen ? "h5" : "h3"}
           fontWeight="bold"
-          color="White"
+          color="#05081C"
           width={isSmallScreen ? "100%" : "auto"}
           whiteSpace={isSmallScreen ? "normal" : "nowrap"}
         >
@@ -240,7 +240,7 @@ const UserHome = () => {
             {cat.description}
           </Typography>
           <Button
-            onClick={() => navigate("/ushop")}
+            onClick={() => navigate("/shop")}
             variant="outlined"
             sx={{
               alignSelf: "flex-start",
