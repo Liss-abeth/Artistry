@@ -1188,7 +1188,7 @@ const handleDeleteMaterial = async (materialId) => {
 >
   <Container maxWidth="lg">
     <Typography variant="body2" sx={{ fontSize: { xs: "0.8rem", sm: "1rem" } }}>
-      &copy; {new Date().getFullYear()} Artstry | All Rights Reserved
+      &copy; {new Date().getFullYear()} Artistry | All Rights Reserved
     </Typography>  
   </Container>
 </Box>

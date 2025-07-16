@@ -103,7 +103,7 @@ const Homepage = () => {
           width={isSmallScreen ? "100%" : "auto"}
           whiteSpace={isSmallScreen ? "normal" : "nowrap"}
         >
-          Welcome to Artstry
+          Welcome to Artistry
         </Typography>
 
         {showFullText && (
@@ -323,7 +323,7 @@ const Homepage = () => {
         <Box
           component="img"
           src="https://readdy.ai/api/search-image?query=Artist%20working%20in%20a%20bright%20modern%20studio%20with%20painting%20supplies%20and%20artwork%20visible%2C%20showing%20the%20creative%20process%20with%20natural%20lighting.%20The%20scene%20captures%20the%20artistic%20environment%20with%20canvases%2C%20brushes%20and%20art%20materials%2C%20displaying%20a%20professional%20workspace%20with%20an%20authentic%20creative%20atmosphere.&width=600&height=400&seq=13&orientation=landscape" // New artistic image
-          alt="Artstry"
+          alt="Artistry"
           sx={{
             maxWidth: "100%",
             height: isSmallScreen ? 220 : 300,
@@ -351,17 +351,17 @@ const Homepage = () => {
             letterSpacing: 1,
           }}
         >
-          About Artstry
+          About Artistry
         </Typography>
 
         <Typography variant="body1" sx={{ color: "black", mb: 2 }}>
-          Welcome to Artstry, the ultimate platform for artists and art lovers alike! We bring together
+          Welcome to Artistry, the ultimate platform for artists and art lovers alike! We bring together
           a community of talented artists from around the globe, offering exclusive artworks, materials,
           and unique art products.
         </Typography>
 
         <Typography variant="body1" sx={{ color: "black", mb: 3 }}>
-          Whether you're a seasoned artist or a curious beginner, Artstry is your creative playground.
+          Whether you're a seasoned artist or a curious beginner, Artistry is your creative playground.
           Explore, create, and connect with a vibrant community of creators and collectors.
         </Typography>
 

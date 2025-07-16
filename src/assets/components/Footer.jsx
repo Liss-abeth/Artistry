@@ -52,7 +52,7 @@ const Footer = () => {
         </Grid>
         <Divider sx={{ my: 3, borderColor: "white" }} />
         <Typography align="center" variant="body2">
-          &copy; 2025 Artstry. All rights reserved.
+          &copy; 2025 Artistry. All rights reserved.
         </Typography>
       </Container>
     </Box>

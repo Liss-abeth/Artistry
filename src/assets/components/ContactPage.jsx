@@ -173,7 +173,7 @@ const ContactPage = () => {
                 Contact Information
               </Typography>
               <Typography variant="body1">
-                <strong>Email:</strong> support@artstry.com
+                <strong>Email:</strong> support@artistry.com
               </Typography>
               <Typography variant="body1">
                 <strong>Phone:</strong> +1 123 456 7890

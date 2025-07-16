@@ -131,7 +131,7 @@ const UserHome = () => {
           width={isSmallScreen ? "100%" : "auto"}
           whiteSpace={isSmallScreen ? "normal" : "nowrap"}
         >
-          Welcome to Artstry
+          Welcome to Artistry
         </Typography>
 
         {showFullText && (
